@@ -9,6 +9,8 @@ import { CursoService } from '../curso.service';
 export class CursoListComponent implements OnInit {
 
   cursos : any = []  // Vetor vazio
+
+  displayedColumns : string[] = ['nome', 'carga_horaria', 'nivel', 'valor_curso']
   
   constructor(private cursoSrv : CursoService) { }
 
